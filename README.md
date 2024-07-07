@@ -1,17 +1,28 @@
 # API EM GOLANG
 
-Descrição curta do projeto.
+Este projeto consiste em uma API em Go para gerenciar um catálogo de livros. Utiliza o framework Gin para facilitar a criação de endpoints HTTP.
 
-## Instalação
+## Funcionalidades Principais
 
-### Pré-requisitos
+- Listagem de todos os livros disponíveis.
+- Busca de um livro por ID.
+- Adição de novos livros ao catálogo.
+- Funcionalidade de checkout para emprestar livros.
 
-- Go 1.16 ou superior
+## Tecnologias Utilizadas
+
+- Go 1.16
+- Gin (github.com/gin-gonic/gin) - Framework web para Go
+- JSON - Formato utilizado para comunicação entre cliente e servidor
+
+## Instruções de Uso
 
 ### Clonando o Repositório
 
 ```bash
 git clone https://github.com/thalisonsilva/Go-api.git
+cd seu-projeto
+```
 
 cd seu-projeto
 ```
