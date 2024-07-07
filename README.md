@@ -28,15 +28,15 @@ go build -o main
 ```
 curl localhost:8080/books
 ```
-###Buscar Livro por ID:
+### Buscar Livro por ID:
 ```
 curl localhost:8080/books/1
 ```
-###Criar um Novo Livro:
+### Criar um Novo Livro:
 ```
 curl -X POST localhost:8080/books -H "Content-Type: application/json" -d '{"id": "4", "title": "Novo Livro", "author": "Autor Novo", "quantity": 3}'
 ```
-###Checkout de um Livro:
+### Checkout de um Livro:
 ```
 curl -X PATCH localhost:8080/checkout?id=1
 ```
