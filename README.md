@@ -19,33 +19,29 @@ Este projeto consiste em uma API em Go para gerenciar um catálogo de livros. Ut
 
 ### Clonando o Repositório
 
-bash
-```git clone https://github.com/thalisonsilva/Go-api.git
+```bash
+git clone https://github.com/thalisonsilva/Go-api.git
 cd seu-projeto
 
+### Compilando e Executando o Projeto
+```bash 
+go build -o main
+./main
 
-cd seu-projeto
-
-### Compilando o Projeto:
-
-```go build -o main
-
-### Executando o Projeto:
-```
-````./main
-
-### Listar Todos os Livros:
-
-
-```curl localhost:8080/books
+### Exemplos de Uso
+Listar Todos os Livros: 
+```bash 
+curl localhost:8080/books
 
 ### Buscar Livro por ID:
-
-```curl localhost:8080/books/1
+```bash 
+curl localhost:8080/books/1
 
 ### Criar um Novo Livro:
+```bash 
 
-``` curl -X POST localhost:8080/books -H "Content-Type: application/json" -d '{"id": "4", "title": "Novo Livro", "author": "Autor Novo", "quantity": 3}'
+curl -X POST localhost:8080/books -H "Content-Type: application/json" -d '{"id": "4", "title": "Novo Livro", "author": "Autor Novo", "quantity": 3}'
 
 ### Checkout de um Livro:
-``` curl -X PATCH localhost:8080/checkout?id=1
+```bash 
+curl -X PATCH localhost:8080/checkout?id=1
