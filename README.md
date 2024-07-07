@@ -12,28 +12,31 @@ Descrição curta do projeto.
 
 ```bash
 git clone https://github.com/thalisonsilva/Go-api.git
+
 cd seu-projeto
-
-Compilando o Projeto:
+```
+### Compilando o Projeto:
+```
 go build -o main
+```
 
-
-Executando o Projeto:
-
+### Executando o Projeto:
+```
 ./main
-
-Listar Todos os Livros:
-
+```
+### Listar Todos os Livros:
+```
 curl localhost:8080/books
-
-Buscar Livro por ID:
-
+```
+###Buscar Livro por ID:
+```
 curl localhost:8080/books/1
-
-Criar um Novo Livro:
-
+```
+###Criar um Novo Livro:
+```
 curl -X POST localhost:8080/books -H "Content-Type: application/json" -d '{"id": "4", "title": "Novo Livro", "author": "Autor Novo", "quantity": 3}'
-
-Checkout de um Livro:
-
+```
+###Checkout de um Livro:
+```
 curl -X PATCH localhost:8080/checkout?id=1
+```
