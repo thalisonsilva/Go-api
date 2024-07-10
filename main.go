@@ -79,6 +79,6 @@ func main() {
 	router.GET("/books", getBooks)
 	router.GET("/books/:id", bookById)
 	router.POST("/books", createBook)
-	router.PATCH("/checkout", checkoutBook) // Corrigido para usar checkoutBook no método PATCH
+	router.PATCH("/checkout", checkoutBook) // Corrigido para usar checkoutBook no método PATCH! 
 	router.Run("localhost:8080")
 }
