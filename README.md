@@ -1,47 +1,47 @@
-# API EM GOLANG
+# API IN GOLANG
 
-Este projeto consiste em uma API em Go para gerenciar um catálogo de livros. Utiliza o framework Gin para facilitar a criação de endpoints HTTP.
+This project consists of a Go API to manage a book catalog. Uses the Gin framework to facilitate the creation of HTTP endpoints.
 
-## Funcionalidades Principais
+## Main Features
 
-- Listagem de todos os livros disponíveis.
-- Busca de um livro por ID.
-- Adição de novos livros ao catálogo.
-- Funcionalidade de checkout para emprestar livros.
+- List of all available books.
+- Search for a book by ID.
+- Addition of new books to the catalogue.
+- Checkout functionality to borrow books.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
 - Go 1.16
-- Gin (github.com/gin-gonic/gin) - Framework web para Go
-- JSON - Formato utilizado para comunicação entre cliente e servidor
+- Gin (github.com/gin-gonic/gin) - Web framework for Go
+- JSON - Format used for communication between client and server
 
-## Instruções de Uso
+## Instructions for use
 
-### Clonando o Repositório
+### Cloning the Repository
 
 
 `git clone https://github.com/thalisonsilva/Go-api.git
-cd seu-projeto`
+cd your-project`
 
-### Compilando e Executando o Projeto
+### Compiling and Running the Project
 
 `go build -o main
 ./main`
 
-### Exemplos de Uso
-Listar Todos os Livros: 
+### Usage Examples
+List All Books:
 
 `curl localhost:8080/books`
 
-### Buscar Livro por ID:
+### Search Book by ID:
 
 `curl localhost:8080/books/1`
 
-### Criar um Novo Livro:
+### Create a New Book:
 
 
-`curl -X POST localhost:8080/books -H "Content-Type: application/json" -d '{"id": "4", "title": "Novo Livro", "author": "Autor Novo", "quantity": 3}'`
+`curl -X POST localhost:8080/books -H "Content-Type: application/json" -d '{"id": "4", "title": "New Book", "author": "New Author" , "quantity": 3}'`
 
-### Checkout de um Livro:
+### Checkout a Book:
 
 `curl -X PATCH localhost:8080/checkout?id=1`
